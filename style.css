@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .parallax {
+    background-image: url('./media_4.webp'); /* Ensure this points to the correct location */
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute; /* Position the logo inside the parallax section */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    width: 100px; /* Adjust the logo size */
+    z-index: 10; /* Ensure it stays above other elements */
+  }
+  
+  .overlay {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    padding: 20px;
+  }
+  
+  .content {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .logo {
+      width: 80px; /* Smaller logo size for mobile */
+      top: 15px; /* Adjust top position */
+      left: 15px; /* Adjust left position */
+    }
+  
+    .overlay {
+      padding: 10px; /* Less padding for smaller screens */
+    }
+  
+    .content {
+      padding: 30px; /* Less padding for content on mobile */
+    }
+  
+    .footer {
+      padding: 15px; /* Less padding for footer on mobile */
+    }
+  }
+  
