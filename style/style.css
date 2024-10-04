@@ -9,7 +9,7 @@
   }
   
   .parallax {
-    background-image: url('./media_4.webp'); /* Ensure this points to the correct location */
+    background-image: url('../images/media_4.webp'); /* Ensure this points to the correct location */
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
